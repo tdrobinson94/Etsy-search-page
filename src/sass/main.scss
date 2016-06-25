@@ -1,0 +1,358 @@
+.navbar{
+  width: 100%;
+  height: 80px;
+  position: relative;
+  min-width: 1000px;
+  .etsy-logo{
+    height: 35px;
+    position: absolute;
+    left: 3%;
+    top: 25px;
+  }
+  .search-bar{
+    border: 1px solid lightgray;
+    position: absolute;
+    left: 11%;
+    top: 25px;
+    width: 350px;
+    border-radius: 3px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+  .search{
+    background-color: rgb(52,168,196);
+    border: 1px solid rgb(52,168,196);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: white;
+    font-size: 14px;
+    width: 80px;
+    position: absolute;
+    left: 38%;
+    top: 25px;
+    height: 34px;
+  }
+  .search:hover{
+    background-color: rgb(60,177,203);
+  }
+  .sell{
+    position: absolute;
+    right: 25%;
+    top: 33px;
+    font-size: 14px;
+    color: rgb(52,168,196);
+    border: transparent;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .sell:hover{
+    text-decoration: underline;
+  }
+  .register{
+    position: absolute;
+    right: 18.7%;
+    top: 33px;
+    font-size: 14px;
+    color: rgb(52,168,196);
+    border: transparent;
+    background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .register:hover{
+    text-decoration: underline;
+  }
+  .sign-in{
+    background-color: transparent;
+    border: 1px solid rgb(52,168,196);
+    border-radius: 2.5px;
+    padding: 8px;
+    color: rgb(52,168,196);
+    position: absolute;
+    font-size: 14px;
+    top: 25px;
+    right: 11%;
+  }
+  .sign-in:hover{
+    background-color: rgb(240,251,253);
+  }
+  .bar{
+    border-left: 1px solid lightgray;
+    position: absolute;
+    top: 22.5px;
+    right: 9%;
+    height: 40px;
+  }
+  .cart{
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    right: 5%;
+    font-size: 12px;
+    background-color: transparent;
+    border: transparent;
+    .cart-logo{
+      position: absolute;
+      top: -20px;
+      right: 5%;
+      height: 20px;
+      margin-right: 5px;
+    }
+  }
+  .cart:hover{
+    opacity: .5;
+  }
+}
+.link-bar{
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  height: 45px;
+  line-height: 45px;
+  min-width: 1000px;
+  padding-left: 20px;
+  button{
+    margin-left: 15px;
+    color: gray;
+    font-size: 14px;
+    background-color: transparent;
+    border: transparent;
+    padding: 0px;
+    height: 45px;
+  }
+  button:hover{
+    border-bottom: 3px solid rgb(245,100,0);
+    color: black;
+  }
+}
+.whole-page{
+  background-color: rgb(245,245,241);
+  width: 100%;
+  height: 2550px;
+  border-bottom: 1px solid rgb(226,226,226);
+}
+.side-bar{
+  float: left;
+  h1{
+    font-size: 13px;
+    margin: 30px 0px 0px 40px;
+  }
+}
+.side-container{
+  width: 230px;
+  height: 395px;
+  border: 1px solid lightgray;
+  margin-left: 40px;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 3px;
+}
+h2{
+  font-size: 13px;
+  margin: 5px 0px 0px 0px;
+  padding-left: 15px;
+}
+h2 button{
+  background-color: transparent;
+  border: transparent;
+  padding: 7px 0px 0px 0px;
+}
+h2 button:hover{
+  text-decoration: underline;
+}
+.all-categories{
+  list-style: none;
+  margin-top: 5px;
+  padding-left: 25px;
+  li button{
+    font-size: 13px;
+    color: rgb(52,168,196);
+    background-color: transparent;
+    border: transparent;
+    padding: 7px 0px 0px 0px;
+  }
+  li button:hover{
+    text-decoration: underline;
+  }
+}
+.main-content{
+  float: left;
+  width: 75%;
+  margin-left: 20px;
+  h1{
+    font-size: 14px;
+    margin: 30px 0px 0px 30px;
+    button{
+      background-color: transparent;
+      border: transparent;
+      color: rgb(52,168,196);
+      padding: 0px;
+      }
+      button:hover{
+        text-decoration: underline;
+    }
+  }
+  .item-content{
+    margin-top: 20px;
+    .item-container{
+      width: 265px;
+      height: 255px;
+      display: inline-block;
+      border: 1px solid lightgray;
+      margin: 1%;
+      border-radius: 5px;
+      .item-image img{
+        display: inline;
+        height: 211px;
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        }
+        .item-info{
+          .itemTitle{
+            display: block;
+            font-size: 13px;
+            overflow: hidden;
+            height: 15px;
+            padding-left: 5px;
+          }
+          .shopAndprice{
+            float: left;
+            font-size: 12.5px;
+            padding: 5px;
+            width: 255px;
+            .shopName{
+              float: left;
+              color: gray;
+            }
+            .itemPrice{
+              float: right;
+              color: rgb(120,192,66);
+            }
+          }
+        }
+      }
+    }
+  }
+.bottombar{
+  padding: 40px 0px 10px 0px;
+  background-color:rgb(245,245,241);
+  margin: auto;
+  .bottombox{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 250px 20px 250px;
+    border: 10px solid rgb(239,239,235);
+    margin-left: 8.5%;
+    div{
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    .subscribe-bar{
+      padding: 5px 0px 5px 10px;
+      border: 1px solid lightgray;
+      border-radius: 3px;
+      width: 250px;
+    }
+    .subscribe{
+      background-color: rgb(52,168,196);
+      border: 1px solid rgb(52,168,196);
+      color: white;
+      border-radius: 4px;
+      padding: 5px 30px 5px 30px;
+      margin-left: 10px;
+    }
+  }
+}
+.lastbar{
+  float: left;
+  width: 100%;
+  background-color: rgb(245,245,241);
+  .bottomLists{
+    text-align: center;
+    .column{
+      list-style: none;
+      font-size: 13px;
+      display: inline-block;
+      padding: 0px;
+      width: 150px;
+      line-height: 20px;
+      vertical-align: top;
+      text-align: left;
+      padding: 10px;
+      li{
+        .open{
+          background-color: rgb(52,168,196);
+          border: 1px solid rgb(52,168,196);
+          color: white;
+          border-radius: 4px;
+          margin-bottom: 20px;
+        }
+        .open:hover{
+          background-color: rgb(60,177,203);
+          text-decoration: none;
+        }
+        button{
+          background-color: transparent;
+          border: transparent;
+          color: rgb(52,168,196);
+        }
+        button:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .buttons{
+    text-align: center;
+    .button{
+      padding: 10px;
+      border: 1px solid rgb(203,204,201);
+      background-color: rgb(245,245,241);
+      border-radius: 4px;
+      font-size: 13px;
+      margin-top: 20px;
+      span{
+      border-left: 1px solid lightgray;
+      margin-right: 5px;
+      }
+    }
+    .help{
+      padding: 10px 60px 10px 60px;
+      font-size: 14px;
+      margin-left: 30px;
+    }
+    .button:hover{
+      border: 1px solid gray;
+    }
+  }
+}
+.buttons:after{
+  content: "";
+  display: block;
+  border-top: solid 1px rgb(231,231,231);
+  height: 1px;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 3105px;
+  z-index: 1;
+  width: 900px;
+}
+.endOfPage{
+  font-size: 13px;
+  text-align: center;
+  background-color: rgb(245,245,241);
+  margin: 25px;
+  .copyright{
+    color: lightgray;
+  }
+  span{
+    color: gray;
+    margin-left: 10px;
+  }
+}
+html{
+  min-width: 1200px;
+  max-width: 1200px;
+}
