@@ -180,21 +180,41 @@ h2 button:hover{
   float: left;
   width: 75%;
   margin-left: 20px;
-  h1{
-    font-size: 14px;
-    margin: 30px 0px 0px 30px;
-    button{
-      background-color: transparent;
-      border: transparent;
-      color: rgb(52,168,196);
-      padding: 0px;
+  .topbar{
+    width: 94%;
+    .main{
+      font-size: 14px;
+      margin: 30px 0px 0px 10px;
+      display: inline-block;
+      button{
+        background-color: transparent;
+        border: transparent;
+        color: rgb(52,168,196);
+        padding: 0px;
+        }
+        button:hover{
+          text-decoration: underline;
       }
-      button:hover{
-        text-decoration: underline;
+    }
+    .sort{
+      font-size: 14px;
+      display: inline-block;
+      margin: 30px 0px 0px 10px;
+      float: right;
+      button{
+        background-color: transparent;
+        border: transparent;
+        color: rgb(52,168,196);
+        padding: 0px;
+        button:hover{
+          text-decoration: underline;
+      }
+      }
     }
   }
   .item-content{
-    margin-top: 20px;
+    // display: flex;
+    // justify-content: space-between;
     .item-container{
       width: 265px;
       height: 255px;
@@ -208,6 +228,9 @@ h2 button:hover{
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
         }
+        .item-image img:hover{
+
+        }
         .item-info{
           .itemTitle{
             display: block;
@@ -215,6 +238,8 @@ h2 button:hover{
             overflow: hidden;
             height: 15px;
             padding-left: 5px;
+            text-decoration: none;
+            color: black;
           }
           .shopAndprice{
             float: left;
@@ -224,10 +249,12 @@ h2 button:hover{
             .shopName{
               float: left;
               color: gray;
+              text-decoration: none;
             }
             .itemPrice{
               float: right;
               color: rgb(120,192,66);
+              text-decoration: none;
             }
           }
         }
@@ -238,12 +265,13 @@ h2 button:hover{
   padding: 40px 0px 10px 0px;
   background-color:rgb(245,245,241);
   margin: auto;
+  display: flex;
+  justify-content: center;
   .bottombox{
     display: inline-block;
     text-align: center;
     padding: 20px 250px 20px 250px;
     border: 10px solid rgb(239,239,235);
-    margin-left: 8.5%;
     div{
       margin-bottom: 10px;
       font-size: 13px;
@@ -262,6 +290,9 @@ h2 button:hover{
       padding: 5px 30px 5px 30px;
       margin-left: 10px;
     }
+    .subscribe:hover{
+      background-color: rgb(60,177,203);
+    }
   }
 }
 .lastbar{
@@ -274,12 +305,11 @@ h2 button:hover{
       list-style: none;
       font-size: 13px;
       display: inline-block;
-      padding: 0px;
       width: 150px;
       line-height: 20px;
       vertical-align: top;
       text-align: left;
-      padding: 10px;
+      padding: 20px;
       li{
         .open{
           background-color: rgb(52,168,196);
@@ -287,6 +317,7 @@ h2 button:hover{
           color: white;
           border-radius: 4px;
           margin-bottom: 20px;
+          padding: 0px 10px 0px 10px;
         }
         .open:hover{
           background-color: rgb(60,177,203);
@@ -352,7 +383,7 @@ h2 button:hover{
     margin-left: 10px;
   }
 }
-html{
-  min-width: 1200px;
-  max-width: 1200px;
-}
+// html{
+//   min-width: 1200px;
+//   max-width: 1200px;
+// }

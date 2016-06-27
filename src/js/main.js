@@ -5,24 +5,26 @@ var item = items.results[0];
 var count = items.count;
 
 function resultsTemplate(num){
-  return `<p class="results">
-  ${items.count}</p>`;
+  return `<span>${items.count}</span>`;
 };
-function addResults (num){
-  var resultsHTML = resultsTemplate(num);
-  $('.main').append(resultsHTML + 'Results');
+
+function addResults(num){
+  var result = $('.main');
+  var resultsTemplate = resultsTemplate(num);
+  console.log(num);
+  result.append(resultsTemplate);
 };
 
 function etsyTemplate(item){
   return `<div class="item-container">
     <div class="item-image">
-      <img src="${item.Images[0].url_170x135}">
+      <a href="${item.url}"><img src="${item.Images[0].url_170x135}"></a>
     </div>
     <div class="item-info">
-      <a class="itemTitle">${item.title}</a>
+      <a class="itemTitle" href="${item.url}">${item.title}</a>
       <div class="shopAndprice">
-        <a class="shopName">${item.Shop.shop_name}</a>
-        <a class="itemPrice">$${item.price}</a>
+        <a class="shopName" href="${item.url}">${item.Shop.shop_name}</a>
+        <a class="itemPrice" href="${item.url}">$${item.price}</a>
       </div>
     </div>
   </div>`;
