@@ -4,16 +4,18 @@ import $ from "jquery";
 var item = items.results[0];
 var count = items.count;
 
-function resultsTemplate(num){
-  return `<span>${items.count}</span>`;
-};
+// function resultsTemplate(count){
+//   return `<div>${items.count}</div>`;
+// };
+//
+// function addResults(count){
+//   var result = $('.main');
+//   var resultsHTML = resultsTemplate(count);
+//   console.log(count);
+//   result.append(resultsHTML);
+// };
+$(".main").append(items.count + " Results");
 
-function addResults(num){
-  var result = $('.main');
-  var resultsTemplate = resultsTemplate(num);
-  console.log(num);
-  result.append(resultsTemplate);
-};
 
 function etsyTemplate(item){
   return `<div class="item-container">
